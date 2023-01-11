@@ -1,0 +1,313 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     10943,        304]
+NotebookOptionsPosition[     10180,        274]
+NotebookOutlinePosition[     10535,        290]
+CellTagsIndexPosition[     10492,        287]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F", "[", 
+   RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+  RowBox[{"NIntegrate", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Exp", "[", 
+        RowBox[{
+         RowBox[{"-", "I"}], "  ", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{"x0", "^", "2"}], "+", 
+           RowBox[{"y0", "^", "2"}], "+", 
+           RowBox[{"z", "^", "2"}]}], "]"}]}], "]"}], "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"x0", "^", "2"}], "+", 
+         RowBox[{"y0", "^", "2"}], "+", 
+         RowBox[{"z", "^", "2"}]}], "]"}]}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"z", "/", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{"z", "^", "2"}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}]}], "]"}]}], "-", 
+        RowBox[{"z", "/", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{"z", "^", "2"}], "+", 
+           RowBox[{"y0", "^", "2"}], "+", 
+           RowBox[{"x0", "^", "2"}]}], "]"}]}]}], ")"}], 
+      RowBox[{
+       RowBox[{"Exp", "[", 
+        RowBox[{"I", " ", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}], "+", 
+           RowBox[{"z", "^", "2"}]}], "]"}]}], "]"}], "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"z", "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}]}], "]"}]}]}], "/.", 
+     RowBox[{"z", "\[Rule]", "100"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x0", ",", 
+      RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y0", ",", 
+      RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.494112970546875*^9, 3.49411297515625*^9}, {
+  3.494113043484375*^9, 3.494113063*^9}, {3.494113365296875*^9, 
+  3.49411343709375*^9}, {3.4941136564375*^9, 3.494113684515625*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"-", "I"}], " ", "k", " ", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        RowBox[{"x0", "^", "2"}], "+", 
+        RowBox[{"y0", "^", "2"}], "+", 
+        RowBox[{"z0", "^", "2"}]}], "]"}]}], "]"}], 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"z", "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"z", "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}]}], "]"}]}], "-", 
+      RowBox[{"z0", "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"z0", "^", "2"}], "+", 
+         RowBox[{"y0", "^", "2"}], "+", 
+         RowBox[{"x0", "^", "2"}]}], "]"}]}]}], ")"}], 
+    RowBox[{
+     RowBox[{"Exp", "[", 
+      RowBox[{"I", " ", "k", " ", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"z", "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}]}], "]"}]}], "]"}], "/", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"z", "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"y", "-", "y0"}], ")"}], "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}]}], "]"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x0", ",", 
+     RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y0", ",", 
+     RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.494106630109375*^9, 3.49410667159375*^9}, {
+  3.494111513546875*^9, 3.49411151378125*^9}, {3.494112361375*^9, 
+  3.49411236146875*^9}, {3.4941124226875*^9, 3.4941126205*^9}, {
+  3.494112762421875*^9, 3.494112778890625*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FourierTransform", "[", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "I"}], " ", "k", " ", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"x0", "^", "2"}], "+", 
+       RowBox[{"y0", "^", "2"}], "+", 
+       RowBox[{"z0", "^", "2"}]}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x0", ",", "y0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"kx", ",", "ky"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.494113087671875*^9, 3.494113130125*^9}, {
+  3.494113288890625*^9, 3.494113289890625*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.494113284140625*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{"F", "[", 
+     RowBox[{"0", ",", "y"}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.49411345690625*^9, 3.49411352503125*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NIntegrate", "::", "\<\"slwcon\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Numerical integration \
+converging too slowly; suspect one of the following: singularity, value of \
+the integration is 0, highly oscillatory integrand, or WorkingPrecision too \
+small.\\\\\\\"\\\", \\\"MT\\\"]\\) \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/slwcon\\\", \
+ButtonNote -> \\\"NIntegrate::slwcon\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.494113462421875*^9, 3.494113525984375*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NIntegrate", "::", "\<\"eincr\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The global error of the \
+strategy GlobalAdaptive has increased more than \\\\\\\"\\\", \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\!\\(2000\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" times. The global \
+error is expected to decrease monotonically after a number of integrand \
+evaluations. Suspect one of the following: the working precision is \
+insufficient for the specified precision goal; the integrand is highly \
+oscillatory or it is not a (piecewise) smooth function; or the true value of \
+the integral is 0. Increasing the value of the GlobalAdaptive option \
+MaxErrorIncreases might lead to a convergent numerical integration. \
+NIntegrate obtained \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(1.6409623061239703`*^-12 - \
+\\(\\(1.029711538849721`*^-9\\\\ \[ImaginaryI]\\)\\)\\), \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" and \\\\\\\"\\\", \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\!\\(8.058410305305841`*^-13\\), \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" for the integral and error \
+estimates.\\\\\\\"\\\", \\\"MT\\\"]\\) \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/eincr\\\", \
+ButtonNote -> \\\"NIntegrate::eincr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.494113462421875*^9, 3.4941134990625*^9}, 
+   3.494113534671875*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{{3.494113464015625*^9, 3.494113518375*^9}, 
+   3.494113561578125*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"F", "[", 
+  RowBox[{"0", ",", "0"}], "]"}]], "Input",
+ CellChangeTimes->{{3.494113564296875*^9, 3.4941136021875*^9}, {
+  3.494113731515625*^9, 3.494113733125*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NIntegrate", "::", "\<\"ncvb\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"NIntegrate failed to \
+converge to prescribed accuracy after \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(18\\), \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" recursive bisections in \
+\\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(x0\\), \\\"MT\\\
+\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" near \\\\\\\"\\\", \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({x0, y0}\\), \\\"MT\\\"]\\)\[NoBreak]\\!\
+\\(\\*StyleBox[\\\"\\\\\\\" = \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({0.49999847687646337`, \
+0.18466063387559606`}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\". NIntegrate obtained \
+\\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(0.`\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" and \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(0.`\\), \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" for the integral and error \
+estimates.\\\\\\\"\\\", \\\"MT\\\"]\\) \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/ncvb\\\", \
+ButtonNote -> \\\"NIntegrate::ncvb\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.494113568078125*^9, 3.4941136073125*^9}, 
+   3.4941136995*^9, 3.494113734296875*^9}],
+
+Cell[BoxData["0.`"], "Output",
+ CellChangeTimes->{{3.494113569390625*^9, 3.4941136159375*^9}, {
+  3.494113708734375*^9, 3.494113734296875*^9}}]
+}, Open  ]]
+},
+WindowSize->{615, 559},
+WindowMargins->{{89, Automatic}, {Automatic, 41}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (2009\:5e742\:670818\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 2414, 70, 152, "Input"],
+Cell[2962, 92, 2038, 60, 112, "Input"],
+Cell[CellGroupData[{
+Cell[5025, 156, 561, 16, 52, "Input"],
+Cell[5589, 174, 77, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5703, 180, 290, 8, 31, "Input"],
+Cell[5996, 190, 641, 11, 62, "Message"],
+Cell[6640, 203, 1557, 25, 162, "Message"],
+Cell[8200, 230, 124, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8361, 237, 187, 4, 31, "Input"],
+Cell[8551, 243, 1467, 24, 62, "Message"],
+Cell[10021, 269, 143, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

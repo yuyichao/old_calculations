@@ -1,0 +1,17 @@
+Notebook[{
+Cell[CellGroupData[{
+Cell["Project: try2", "Title"],
+Cell[TextData[{
+"Wolfram ",
+StyleBox["Workbench",
+FontSlant->"Italic"],
+" 2010-9-29."
+}], "Text"],
+Cell[
+"This notebook is created to test the project.",
+"Text"]
+},Open  ]]
+},
+WindowSize->{600, 750},
+StyleDefinitions->"Default.nb"
+]

@@ -1,0 +1,11 @@
+Resources[
+    Version[1],
+    Sources[
+        Directory["WebPages"],
+        Directory["~"]
+    ],
+    ExecutionBuildCommand["<<try2`"],
+    Paclet[
+        FunctionPaclet[False]
+    ]
+]

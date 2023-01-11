@@ -1,0 +1,141 @@
+!SESSION 2010-09-21 22:44:53.828 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:45:33.890
+!MESSAGE Headers: 1.0;com.wolfram.eclipse.MEET.MEETPlugin;antlr,com.wolfram.eclipse.MEET,com.wolfram.eclipse.MEET.actions,com.wolfram.eclipse.MEET.builders,com.wolfram.eclipse.MEET.codeindex,com.wolfram.eclipse.MEET.debug,com.wolfram.eclipse.MEET.editors,com.wolfram.eclipse.MEET.editors.quickassist,com.wolfram.eclipse.MEET.editors.sourcemodel,com.wolfram.eclipse.MEET.editors.sourcemodel.languageelements,com.wolfram.eclipse.MEET.editors.sourcemodel.utils,com.wolfram.eclipse.MEET.editors.sourcemodel.variables,com.wolfram.eclipse.MEET.editors.templates,com.wolfram.eclipse.MEET.frontend,com.wolfram.eclipse.MEET.launch,com.wolfram.eclipse.MEET.launch.tabs,com.wolfram.eclipse.MEET.mathlink,com.wolfram.eclipse.MEET.outline,com.wolfram.eclipse.MEET.preferences,com.wolfram.eclipse.MEET.projectmodel,com.wolfram.eclipse.MEET.projectmodel.problemdetectors,com.wolfram.eclipse.MEET.properties,com.wolfram.eclipse.MEET.resources,com.wolfram.eclipse.MEET.ui,com.wolfram.eclipse.MEET.utilities,com.wolfram.eclipse.MEET.utilities.ant,com.wolfram.eclipse.MEET.wizards, com.wolfram.eclipse.MEET.wizards.export,com.wolfram.eclipse.MEET.wizards.exts,com.wolfram.jlink,com.wolfram.mexpr,com.wolfram.mexpr.formatter,com.wolfram.mexpr.formatter.indenting,com.wolfram.mexpr.language,com.wolfram.mexpr.structural,com.wolfram.mexpr.utilities,com.wolfram.mexpr.visitors, com.wolfram.mexprtools.visitors, com.wolfram.mexprtools.mexprdiff,com.wolfram.mexprparser;dependent;2.0.126;true;Wolfram Workbench Core;MEET.jar,lib/JLink.jar,lib/antlr.jar,lib/mexpr.jar,lib/mexprparser.jar,lib/mexprtools.jar,lib/lucene-core-2.1.0.jar,lib/wolfram-remote-services-client.jar;2;Wolfram Research;com.wolfram.eclipse.MEET.MEETPlugin;com.wolfram.eclipse.MEET;singleton:=true;plugin;org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jface.text,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor,org.eclipse.core.resources,org.eclipse.ui.ide,org.eclipse.debug.core,org.eclipse.debug.ui,org.eclipse.ui.console,org.eclipse.core.boot,org.eclipse.core.expressions,org.eclipse.core.runtime.compatibility,org.eclipse.core.variables,org.eclipse.ui.views,org.eclipse.team.core,org.eclipse.ui.cheatsheets,org.eclipse.jdt.ui,org.eclipse.jdt.core,org.eclipse.jdt.launching,org.eclipse.ant.core;
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:45:33.906
+!MESSAGE Installed at: Tue Sep 21 22:44:55 CST 2010
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:50.718
+!MESSAGE Starting Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:50.875
+!MESSAGE No metadata cache found; it will be regenerated from source.
+!STACK 0
+java.io.FileNotFoundException: E:\calculation\Mathematica\.metadata\.plugins\com.wolfram.eclipse.MEET\StaticSourceMetadataCache\source_to_cache_map.props (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at com.wolfram.eclipse.MEET.projectmodel.InstallationMetadataExtractor.loadFromCache(InstallationMetadataExtractor.java:107)
+	at com.wolfram.eclipse.MEET.projectmodel.DefaultMathematicaProjectModel.ensureMetadataInitialization(DefaultMathematicaProjectModel.java:316)
+	at com.wolfram.eclipse.MEET.projectmodel.DefaultMathematicaProjectModel.ensureMetadataInitializationAndWait(DefaultMathematicaProjectModel.java:266)
+	at com.wolfram.eclipse.MEET.projectmodel.DefaultMathematicaProjectModel.getFunctionTemplateManager(DefaultMathematicaProjectModel.java:222)
+	at com.wolfram.eclipse.source.problemdetectors.SemanticVisitor.<init>(SemanticVisitor.java:36)
+	at com.wolfram.eclipse.source.problemdetectors.FunctionTemplateProblemDetector.checkSemantics(FunctionTemplateProblemDetector.java:35)
+	at com.wolfram.eclipse.source.problemdetectors.FunctionTemplateProblemDetector.detect(FunctionTemplateProblemDetector.java:27)
+	at com.wolfram.eclipse.MEET.builders.markerupdaters.ProblemDetectorMarkerUpdater.updateImpl(ProblemDetectorMarkerUpdater.java:143)
+	at com.wolfram.eclipse.MEET.builders.markerupdaters.ProblemDetectorMarkerUpdater$1.run(ProblemDetectorMarkerUpdater.java:52)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at com.wolfram.eclipse.MEET.builders.markerupdaters.ProblemDetectorMarkerUpdater.update(ProblemDetectorMarkerUpdater.java:59)
+	at com.wolfram.eclipse.MEET.builders.ProjectModelBuilder.buildResource(ProjectModelBuilder.java:184)
+	at com.wolfram.eclipse.MEET.builders.ProjectModelBuilder.buildImpl(ProjectModelBuilder.java:132)
+	at com.wolfram.eclipse.MEET.builders.ProjectModelBuilder.build(ProjectModelBuilder.java:66)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:50.890
+!MESSAGE Ending Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:50.937
+!MESSAGE Starting Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:50.984
+!MESSAGE Finished Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:51.296
+!MESSAGE CodeIndexer:[] ,  full index, files 0
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:46:53.062
+!MESSAGE CodeIndexer:[],  finish index pass 
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:47:02.468
+!MESSAGE CodeIndexer:[try1] ,  full index, files 3
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:47:02.671
+!MESSAGE CodeIndexer:[try1],  finish index pass 
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:47:02.671
+!MESSAGE Starting Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-21 22:47:02.687
+!MESSAGE Finished Project Metadata loadCaches
+!SESSION 2010-09-29 18:15:14.796 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:37.171
+!MESSAGE Headers: 1.0;com.wolfram.eclipse.MEET.MEETPlugin;antlr,com.wolfram.eclipse.MEET,com.wolfram.eclipse.MEET.actions,com.wolfram.eclipse.MEET.builders,com.wolfram.eclipse.MEET.codeindex,com.wolfram.eclipse.MEET.debug,com.wolfram.eclipse.MEET.editors,com.wolfram.eclipse.MEET.editors.quickassist,com.wolfram.eclipse.MEET.editors.sourcemodel,com.wolfram.eclipse.MEET.editors.sourcemodel.languageelements,com.wolfram.eclipse.MEET.editors.sourcemodel.utils,com.wolfram.eclipse.MEET.editors.sourcemodel.variables,com.wolfram.eclipse.MEET.editors.templates,com.wolfram.eclipse.MEET.frontend,com.wolfram.eclipse.MEET.launch,com.wolfram.eclipse.MEET.launch.tabs,com.wolfram.eclipse.MEET.mathlink,com.wolfram.eclipse.MEET.outline,com.wolfram.eclipse.MEET.preferences,com.wolfram.eclipse.MEET.projectmodel,com.wolfram.eclipse.MEET.projectmodel.problemdetectors,com.wolfram.eclipse.MEET.properties,com.wolfram.eclipse.MEET.resources,com.wolfram.eclipse.MEET.ui,com.wolfram.eclipse.MEET.utilities,com.wolfram.eclipse.MEET.utilities.ant,com.wolfram.eclipse.MEET.wizards, com.wolfram.eclipse.MEET.wizards.export,com.wolfram.eclipse.MEET.wizards.exts,com.wolfram.jlink,com.wolfram.mexpr,com.wolfram.mexpr.formatter,com.wolfram.mexpr.formatter.indenting,com.wolfram.mexpr.language,com.wolfram.mexpr.structural,com.wolfram.mexpr.utilities,com.wolfram.mexpr.visitors, com.wolfram.mexprtools.visitors, com.wolfram.mexprtools.mexprdiff,com.wolfram.mexprparser;dependent;2.0.126;true;Wolfram Workbench Core;MEET.jar,lib/JLink.jar,lib/antlr.jar,lib/mexpr.jar,lib/mexprparser.jar,lib/mexprtools.jar,lib/lucene-core-2.1.0.jar,lib/wolfram-remote-services-client.jar;2;Wolfram Research;com.wolfram.eclipse.MEET.MEETPlugin;com.wolfram.eclipse.MEET;singleton:=true;plugin;org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jface.text,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor,org.eclipse.core.resources,org.eclipse.ui.ide,org.eclipse.debug.core,org.eclipse.debug.ui,org.eclipse.ui.console,org.eclipse.core.boot,org.eclipse.core.expressions,org.eclipse.core.runtime.compatibility,org.eclipse.core.variables,org.eclipse.ui.views,org.eclipse.team.core,org.eclipse.ui.cheatsheets,org.eclipse.jdt.ui,org.eclipse.jdt.core,org.eclipse.jdt.launching,org.eclipse.ant.core;
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:37.218
+!MESSAGE Installed at: Tue Sep 21 22:44:55 CST 2010
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:40.828
+!MESSAGE Starting Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:41.671
+!MESSAGE Ending Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:55.109
+!MESSAGE Starting Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:15:55.937
+!MESSAGE Finished Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.328
+!MESSAGE Starting Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.453
+!MESSAGE Ending Metadata Initialization
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.453
+!MESSAGE Starting Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.453
+!MESSAGE Finished Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.593
+!MESSAGE CodeIndexer:[try2] ,  full index, files 2
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.609
+!MESSAGE CodeIndexer:[try2],  finish index pass 
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.609
+!MESSAGE Starting Project Metadata loadCaches
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2010-09-29 18:18:53.609
+!MESSAGE Finished Project Metadata loadCaches
+
+!ENTRY org.eclipse.core.jobs 4 2 2010-09-29 18:28:51.531
+!MESSAGE An internal error occurred during: "Mathematica Result Job".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1187)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:655)
+	at org.eclipse.ui.internal.console.ConsoleManager.warnOfContentChange(ConsoleManager.java:353)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:250)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:240)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:225)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at org.eclipse.ui.console.MessageConsoleStream.println(MessageConsoleStream.java:81)
+	at com.wolfram.eclipse.MEET.launch.MathematicaConsoleLaunch$ResultJob.run(MathematicaConsoleLaunch.java:906)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

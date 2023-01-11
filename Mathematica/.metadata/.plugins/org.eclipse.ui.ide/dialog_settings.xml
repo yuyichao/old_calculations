@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.wolfram.eclipse.MEET:2.0.126"/>
+		<item value="com.wolfram.eclipse.product:2.0.126"/>
+		<item value="com.wolfram.eclipse.webmathematica:2.0.126"/>
+		<item value="org.eclipse.cvs:1.1.101.R35x_v20090811-7E79FEd9KKF5H2YDWFLLBL01A16"/>
+		<item value="org.eclipse.gef:3.2.1.v20060921"/>
+		<item value="org.eclipse.help:1.1.1.R35x_v20090811-7e7eFAnFEx2XZoYz0uPgIfwD"/>
+		<item value="org.eclipse.jdt:3.5.1.r351_v20090810-0600-7r88FEoFI0WTo6Az-1qFRHm37ChJ"/>
+		<item value="org.eclipse.pde:3.5.1.R35x_v20090811-7Z7_F9zFDX-aT6Ywvh8_S93"/>
+		<item value="org.eclipse.platform:3.5.1.R35x_v20090910-9gEeG1_FthkNDSP2odXdThaOu9GFDPn83DGB7"/>
+		<item value="org.eclipse.rcp:3.5.1.R35x_v20090811-9SA0FxVFqE70OL1ARMrfcO6e7BA6"/>
+		<item value="org.eclipse.sdk:3.5.1.R35x_v20090811-7Q7bAIBPVUBVbKSMTyyfpOteKTem7_g2paS1__z-Rrmf4"/>
+		<item value="tk.eclipse.plugin.htmleditor:2.0.4"/>
+	</list>
+	<section name="ResourceNavigator">
+		<item value="" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.wolfram.eclipse.webmathematica.newformproject" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.team.cvs.ui.newWizards"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="com.wolfram.eclipse.MEET"/>
+			<item value="com.wolfram.eclipse.MEET/com.wolfram.eclipse.webmathematica"/>
+			<item value="org.eclipse.pde.PDE"/>
+		</list>
+	</section>
+</section>

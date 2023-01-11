@@ -1,0 +1,10 @@
+function a=ffff(t,x0)
+x=x0(1,1);
+y=x0(2,1);
+px=x0(3,1);
+py=x0(4,1);
+dpx=-x*(x^2+y^2)^(-3/2);
+dpy=-y*(y^2+x^2)^(-3/2);
+dx=2*px;
+dy=2*py;
+a=[dx;dy;dpx;dpy];

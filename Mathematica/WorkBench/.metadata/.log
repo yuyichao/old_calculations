@@ -1,0 +1,94 @@
+!SESSION 2011-07-19 00:27:58.252 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2011-07-19 00:28:36.574
+!MESSAGE Headers: 1.0;com.wolfram.eclipse.MEET.MEETPlugin;antlr,com.wolfram.eclipse.MEET,com.wolfram.eclipse.MEET.actions,com.wolfram.eclipse.MEET.builders,com.wolfram.eclipse.MEET.codeindex,com.wolfram.eclipse.MEET.debug,com.wolfram.eclipse.MEET.editors,com.wolfram.eclipse.MEET.editors.quickassist,com.wolfram.eclipse.MEET.editors.sourcemodel,com.wolfram.eclipse.MEET.editors.sourcemodel.languageelements,com.wolfram.eclipse.MEET.editors.sourcemodel.utils,com.wolfram.eclipse.MEET.editors.sourcemodel.variables,com.wolfram.eclipse.MEET.editors.templates,com.wolfram.eclipse.MEET.frontend,com.wolfram.eclipse.MEET.launch,com.wolfram.eclipse.MEET.launch.tabs,com.wolfram.eclipse.MEET.mathlink,com.wolfram.eclipse.MEET.outline,com.wolfram.eclipse.MEET.preferences,com.wolfram.eclipse.MEET.projectmodel,com.wolfram.eclipse.MEET.projectmodel.problemdetectors,com.wolfram.eclipse.MEET.properties,com.wolfram.eclipse.MEET.resources,com.wolfram.eclipse.MEET.ui,com.wolfram.eclipse.MEET.utilities,com.wolfram.eclipse.MEET.utilities.ant,com.wolfram.eclipse.MEET.wizards, com.wolfram.eclipse.MEET.wizards.export,com.wolfram.eclipse.MEET.wizards.exts,com.wolfram.jlink,com.wolfram.mexpr,com.wolfram.mexpr.formatter,com.wolfram.mexpr.formatter.indenting,com.wolfram.mexpr.language,com.wolfram.mexpr.structural,com.wolfram.mexpr.utilities,com.wolfram.mexpr.visitors, com.wolfram.mexprtools.visitors, com.wolfram.mexprtools.mexprdiff,com.wolfram.mexprparser;dependent;2.0.126;true;Wolfram Workbench Core;MEET.jar,lib/JLink.jar,lib/antlr.jar,lib/mexpr.jar,lib/mexprparser.jar,lib/mexprtools.jar,lib/lucene-core-2.1.0.jar,lib/wolfram-remote-services-client.jar;2;Wolfram Research;com.wolfram.eclipse.MEET.MEETPlugin;com.wolfram.eclipse.MEET;singleton:=true;plugin;org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jface.text,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor,org.eclipse.core.resources,org.eclipse.ui.ide,org.eclipse.debug.core,org.eclipse.debug.ui,org.eclipse.ui.console,org.eclipse.core.boot,org.eclipse.core.expressions,org.eclipse.core.runtime.compatibility,org.eclipse.core.variables,org.eclipse.ui.views,org.eclipse.team.core,org.eclipse.ui.cheatsheets,org.eclipse.jdt.ui,org.eclipse.jdt.core,org.eclipse.jdt.launching,org.eclipse.ant.core;
+
+!ENTRY com.wolfram.eclipse.MEET 1 0 2011-07-19 00:28:36.576
+!MESSAGE Installed at: Tue Jul 19 00:23:27 EDT 2011
+
+!ENTRY org.eclipse.ui.browser 2 0 2011-07-19 00:28:38.551
+!MESSAGE Internal browser is not available: No more handles [MOZILLA_FIVE_HOME='/usr/lib/xulrunner-addons'] (java.lang.UnsatisfiedLinkError: no swt-mozilla-gtk-3555 or swt-mozilla-gtk in swt.library.path, java.library.path or the jar file)
+
+!ENTRY com.wolfram.eclipse.product 4 0 2011-07-19 00:28:38.640
+!MESSAGE 
+!STACK 1
+org.eclipse.ui.PartInitException: Could not open a Web browser because there are none configured. Check the Web Browser preferences.
+	at org.eclipse.ui.internal.browser.DefaultBrowserSupport.createBrowser(DefaultBrowserSupport.java:112)
+	at org.eclipse.ui.internal.browser.WorkbenchBrowserSupport.createBrowser(WorkbenchBrowserSupport.java:97)
+	at com.wolfram.eclipse.product.handlers.WelcomePageHandler.openWelcome(WelcomePageHandler.java:33)
+	at com.wolfram.eclipse.product.startup.OpenWelcomeStartup$1.run(OpenWelcomeStartup.java:29)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3468)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3115)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.ui 4 0 2011-07-19 00:28:38.641
+!MESSAGE Could not open a Web browser because there are none configured. Check the Web Browser preferences.
+!SESSION 2011-09-09 10:20:54.031 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.app 4 2 2011-09-09 10:21:07.395
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.app".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:388)
+	at org.eclipse.swt.widgets.Shell.close(Shell.java:607)
+	at org.eclipse.ui.splash.AbstractSplashHandler.dispose(AbstractSplashHandler.java:63)
+	at org.eclipse.ui.splash.BasicSplashHandler.dispose(BasicSplashHandler.java:189)
+	at org.eclipse.ui.internal.Workbench$7.applicationRunning(Workbench.java:591)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle$1.run(EclipseAppHandle.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.applicationRunning(EclipseAppHandle.java:236)
+	at org.eclipse.core.internal.runtime.InternalPlatform.endSplash(InternalPlatform.java:152)
+	at org.eclipse.core.runtime.Platform.endSplash(Platform.java:567)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2339)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
